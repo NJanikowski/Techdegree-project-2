@@ -4,6 +4,7 @@
     font-family: 'Barlow', sans-serif;
     text-align: center;
     background-color: rgb(42, 149, 149);
+    display:block;
 }
 nav{
     font-weight: 400;
@@ -26,6 +27,10 @@ img{
 a{
 text-decoration: none;
 text-transform: uppercase;
+}
+a:hover{
+    color:orange;
+    text-decoration:underline;
 }
 
 .top-nav {
@@ -64,6 +69,7 @@ li{
 }
 h2{
     margin-top: 15px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 body{
@@ -74,7 +80,7 @@ display: flex;
 flex-direction: column;
 }
 
-.container{
+.container, .contact-con{
     max-width: 1100px;
     padding: 10px;
     margin: 0 auto;
@@ -82,7 +88,7 @@ flex-direction: column;
 
 .col {
     margin: 10px;
-    min-height: 250px;
+    min-height: 300px;
     color: white;
     text-align: center;
     letter-spacing: 1px;
@@ -96,13 +102,29 @@ flex-direction: column;
     margin-top: auto;
     padding: 0 20px;
 }
+section{
+    display: block;
+}
   
 @media(min-width: 768px ) {
     .top {
         display: none;
       }
+      .head-con{
+        display:flex;
+        flex-direction: row-reverse;
+        }
+    .head-con p {
+        float: left;
+        padding-right: 40px;
+        font-size: 1em;
+    }
+    .profile-pic{
+        padding-left: 70px;
+    }
+   
     
-  .full {
+    .full {
         display: inline-block;
         margin-left: 20px;
       }
@@ -125,18 +147,33 @@ flex-direction: column;
         display: flex;
         flex-wrap: wrap;
       }
+      .contact-con{
+        margin:0 auto;
+        width:60%
+      }
     .col {
         flex-basis: calc(50% - 20px);
       }
     .skills-con{
         display: flex;
-        flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: space-between;
+       max-width:500px;
+       margin:auto;
+       font-size: 1.25em;
     }
       .foot-nav{
         letter-spacing: 0.05em;
       }
-
-}
+      p {
+        font-size: 1em;
+      }
+      .contact-blurb{
+        padding: 0px 15px 0px 15px;
+        flex-basis: calc(50% - 20px);
+        
+      }
+    }
 
 @media(min-width: 1024px) {
    

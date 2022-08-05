@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
     <link href="css/styles.css" rel="stylesheet">
-    <title>Mobile Responsive Layout</title>
+    
 
 </head>
 
@@ -23,8 +24,8 @@
         </ul>
     </nav>
         <div class="head-con">
-            <img src="images/profile.jpg" alt="Picture of myself and Fiance hiking.">
-            <p>
+            <img class= "profile-pic" src="images/profile.jpg" alt="Picture of myself and Fiance hiking.">
+            <p class="short-bio">
             Hi! I'm a former paramedic looking to move into a career in the Tech Industry. Along the way I found that I enjoy Front End Web Design after enrolling in Team Treehouse's Techdegree.
             </p>
         </div>
@@ -81,23 +82,26 @@
         </div>
     </section>
 
-    <section id="skills" class="skills-con">
+    <section id="skills">
         <h2>Skills</h2>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascipt</p>
-            <p>C#</p>
-            <p>Java</p>
-
+            <div class="skills-con">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascipt</p>
+                <p>C#</p>
+                <p>Java</p>
+            </div>    
     </section>
 
-    <section id="contact" class="contact-con">
+    <section id="contact">
         <h2>Contact</h2>
-        <p>
-            If you're interested in talking or want more information about what I've been working on, Feel free to reach out!
-        </p>
-        <p><a class="contact-info">+1 (111) 555-1234</a></p>
-        <p><a href="mailto:NMJanikowski@gmail.com" class="contact-info">Email Us!</a></p>
+        <div class="contact-con">
+            <p class="contact-blurb">
+                If you're interested in talking or want more information about what I've been working on, Feel free to reach out!
+            </p>
+            <p><a class="contact-info">+1 (111) 555-1234</a></p>
+            <p><a class="contact-info" href="mailto:NMJanikowski@gmail.com" class="contact-info">Email Us!</a></p>
+        </div>
     </section>
 
     <footer>
