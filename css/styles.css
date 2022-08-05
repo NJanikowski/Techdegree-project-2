@@ -6,6 +6,9 @@
     background-color: rgb(42, 149, 149);
     display:block;
 }
+title{
+    display:none;
+}
 nav{
     font-weight: 400;
     letter-spacing: .05em;
