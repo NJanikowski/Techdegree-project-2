@@ -1,18 +1,55 @@
 *{
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
     font-family: 'Barlow', sans-serif;
     text-align: center;
     background-color: rgb(42, 149, 149);
 }
+nav{
+    font-weight: 400;
+    letter-spacing: .05em;
+    padding: 25px;
+}
+.foot-nav{
+    font-weight: 400;
+    letter-spacing: .05em;
+    padding: 15px; 
+}
+.full {
+    display: none;
+  }
+  
 img{
     max-width: 100%;
 }
 
 a{
 text-decoration: none;
+text-transform: uppercase;
 }
+
+.top-nav {
+    margin-top: 30px;
+  }
+  
+
+.top-nav li {
+    padding: 10px 0;
+    margin: 5px auto;
+}  
+
+h1, .top-nav {
+    text-align: center;
+  }
+  
+  .top-nav, .top-nav li {
+    width: 100%;
+  }
+
+.top-nav a {
+    text-transform: uppercase;
+  }
+  
 
 ul{
     list-style: none;
@@ -25,11 +62,16 @@ li{
     text-transform: uppercase;
     font-weight: 700;
 }
+h2{
+    margin-top: 15px;
+}
 
 body{
 max-width: 1100px;
 padding: 10px;
 margin: 0 auto;
+display: flex;
+flex-direction: column;
 }
 
 .container{
@@ -46,23 +88,81 @@ margin: 0 auto;
     letter-spacing: 1px;
     padding-top: 5px;
   }
+
+  footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 20px;
+}
   
 @media(min-width: 768px ) {
+    .top {
+        display: none;
+      }
+    
+  .full {
+        display: inline-block;
+        margin-left: 20px;
+      }
+    
+    .top-nav {
+        margin-top: 0;
+      }
+    
+    .top-nav li {
+        display: inline-block;
+        width: auto;
+        margin-right: 15px;
+        background-color: transparent;
+      }
+    .top-nav li:last-child {
+        margin-right: 0;
+      }
+
     .container {
         display: flex;
         flex-wrap: wrap;
       }
-      .col {
+    .col {
         flex-basis: calc(50% - 20px);
       }
-    
+    .skills-con{
+        display: flex;
+        flex-wrap: wrap;
+    }
+      .foot-nav{
+        letter-spacing: 0.05em;
+      }
 
 }
 
 @media(min-width: 1024px) {
+   
+    .full {
+        display: inline-block;
+        margin-left: 20px;
+      }
+    
     .col {
         flex-basis: calc(33.333% - 20px);
       }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .foot-nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
     
-
+      .top-nav, .top-nav li
+      .foot-nav, .foot-nav li {
+        width: initial;
+        margin-bottom: 0;
+      }
+    
 }
